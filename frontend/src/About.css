@@ -1,0 +1,191 @@
+/* src/About.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  background: transparent;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  border: none;
+  max-height: 85vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+.about-content::-webkit-scrollbar {
+  display: none;
+}
+
+.about-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about-content::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 4px;
+}
+
+.about-content h1 {
+  font-size: 5rem;
+  color: #ffffffff;
+  border-bottom: 2px solid #f205f6ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #00ffaaff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p, .about-content li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dee2e6;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.about-content li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
+.about-content .back-button {
+  display: block;
+  width: 40%;
+  height:42px; 
+  margin-right: auto;
+  margin-left: 0;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(12, 129, 192, 0.28);
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.about-content .back-button:hover {
+  background-color: #5a6268;
+}
+
+.about-content .gradient-text {
+  background: linear-gradient(270deg, #ff00ff, #ff6600, #00ffff, #ff00ff);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: smoothGradient 4s infinite ease-in-out;
+  font-weight: bold;
+}
+
+@keyframes smoothGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 2rem;
+    max-height: 90vh; 
+  }
+
+  .about-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+  .about-content .back-button:hover {
+  background-color:#5a6268;
+  padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-content p, .about-content li {
+    font-size: 0.9rem;
+  }
+
+  .about-content .back-button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-content .back-button:hover {
+  background-color:#5a6268;
+  padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+  }
+}
+

@@ -1,0 +1,25 @@
+# Ignore all logfiles
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore the entire backend project folder
+/SAP_VM_Project(backend)/
+
+# Ignore node_modules and build artifacts in the frontend
+/frontend/node_modules/
+/frontend/build/
+/frontend/coverage/
+
+# Ignore environment variables files in the frontend
+/frontend/.env
+/frontend/.env.*
+!/frontend/.env.example
+
+# Ignore IDE/Editor specific files
+.vscode/
+.idea/

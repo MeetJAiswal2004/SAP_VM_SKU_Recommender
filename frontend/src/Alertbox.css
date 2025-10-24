@@ -1,0 +1,130 @@
+/* model select alert box styles */
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 6, 8, 0.41);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.alert-box {
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(11, 181, 238, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  min-width: 300px;
+}
+
+.alert-box p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 1rem 0;
+}
+
+
+.alert-box > button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* Auth alert specific styles*/
+
+.alert-box .alert-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.alert-box .alert-buttons button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.alert-box .login-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.alert-box .login-btn:hover {
+  background-color: #45a049;
+}
+
+.alert-box .signup-btn {
+  background-color: transparent;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.alert-box .signup-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.alert-box .cancel-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.alert-box .cancel-btn:hover {
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .alert-box {
+    padding: 1.5rem; 
+    min-width: 250px;
+  }
+
+  .alert-box p {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .alert-box {
+    min-width: 0;
+    width: 70%;
+    padding: 1.5rem 1rem;
+  }
+
+  .alert-box p {
+    font-size: 1.2rem; 
+  }
+
+  .alert-box .alert-buttons {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+}

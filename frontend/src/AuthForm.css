@@ -1,0 +1,145 @@
+/*src/AgreementPage.css */
+
+.auth-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.auth-content {
+  max-width: 350px;
+  width: 80%;
+  background: transparent;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(12, 165, 247, 0.28);
+}
+
+.auth-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffffff;
+  border-bottom: 2px solid #ff00f7ff;
+  padding-bottom: 0.9rem;
+  margin-bottom: 3rem;
+}
+
+.auth-content form label {
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  display: block;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #bfc2c5ff;
+}
+
+.auth-content form input {
+  background-color: transparent;
+  width: 80%;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0px;
+  border: none;
+  color: #f8f9fa;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ff00f7ff;
+  transition: border-bottom 0.3s ease;
+}
+
+.auth-content form input:hover,
+.auth-content form input:focus {
+  border-bottom: 2px solid #00ff2fff;
+}
+
+.auth-content .submit-form-button {
+  width: 50%;
+  margin: 3.5rem auto 0 auto; 
+  display: block;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 30px rgba(35, 72, 92, 0.28);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-content .submit-form-button:hover {
+  background-color: #5a6268;
+}
+
+.auth-content .back-button {
+  display: block;
+  text-align: center;
+  width: 80%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem auto 0 auto;
+  color: white;
+  box-shadow: 0 4px 30px rgba(35, 72, 92, 0.28);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.auth-content .back-button:hover {
+  background-color: #3f4041ff;
+}
+
+.auth-content .error-message {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -1.5rem;
+}
+
+.auth-content .success-message {
+  color: #0bec3fff;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: -1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .auth-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 1rem;
+  }
+
+  .auth-content {
+    width: 95%;
+    padding: 2rem 1.5rem; 
+  }
+
+  .auth-content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .auth-content .submit-form-button {
+    width: 70%;
+  }
+}
