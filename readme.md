@@ -25,22 +25,21 @@
 
 ## 🚀 Application Showcase
 
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/main_page_screenshot.png" alt="Main Recommender Interface" width="48%"/>
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/rag_response_screenshot.png" alt="RAG Mode Response" width="48%"/>
+  <img src="assets/main_page_screenshot.png" alt="Main Recommender Interface" width="48%"/>
+  <img src="assets/rag_response_screenshot.png" alt="RAG Mode Response" width="48%"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/demo.gif" alt="Project Demo GIF" width="80%">
+  <img src="assets/demo.gif" alt="Project Demo GIF" width="80%">
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/login_page_screenshot.png" alt="Login Page" width="30%"/>
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/agreement_page_screenshot.png" alt="User Agreement Page" width="30%"/>
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/about_us_screenshot.png" alt="About Us Page" width="30%"/>
+  <img src="assets/login_page_screenshot.png" alt="Login Page" width="30%"/>
+  <img src="assets/agreement_page_screenshot.png" alt="User Agreement Page" width="30%"/>
+  <img src="assets/about_us_screenshot.png" alt="About Us Page" width="30%"/>
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/mobile_view_1.png" alt="Responsive Mobile View" width="30%"/>
-  <img src="https://raw.githubusercontent.com/MeetJAiswal2004/SAP_VM_SKU_Recommender/main/assets/mobile_view_2.png" alt="Responsive Mobile View 2" width="30%"/>
+  <img src="assets/mobile_view_1.png" alt="Responsive Mobile View" width="30%"/>
+  <img src="assets/mobile_view_2.png" alt="Responsive Mobile View 2" width="30%"/>
 </p>
 
 ---
