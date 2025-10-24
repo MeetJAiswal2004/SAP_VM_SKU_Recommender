@@ -10,8 +10,8 @@ import LoginPage from './LoginPage';
 import SignupPage from './SignupPage';
 import AgreementPage from './AgreementPage';
 import AuthAlert from './AuthAlert';
-import aboutBackgroundImage from './bgimgoriginal.png';
-import mobileBackgroundImage from './mobilebg.png';
+// import aboutBackgroundImage from './bgimgoriginal.png';
+// import mobileBackgroundImage from './mobilebg.png';
 
 function App() {
   const [mode, setMode] = useState(null);
@@ -31,6 +31,8 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentUser, setCurrentUser] = useState(null);
   const [showAuthAlert, setShowAuthAlert] = useState(false);
+  const cloudinaryDesktopBgUrl = "https://res.cloudinary.com/dufsu5par/image/upload/v1758370240/bgimgoriginal_edvyqi.png";
+  const cloudinaryMobileBgUrl = "https://res.cloudinary.com/dufsu5par/image/upload/v1761311787/mobilebg_v1tguw.png";
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem('currentUser');
@@ -147,7 +149,7 @@ function App() {
       handleInfer();
     }
   };
-  const backgroundImage = windowWidth <= 768 ? mobileBackgroundImage : aboutBackgroundImage;
+  const backgroundImage = windowWidth <= 768 ? cloudinaryMobileBgUrl : cloudinaryDesktopBgUrl;
 
   return (
     <div className="app" style={{ backgroundImage: `url(${backgroundImage})` }}>
