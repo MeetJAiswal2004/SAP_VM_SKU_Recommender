@@ -112,53 +112,7 @@ When a query is made in RAG mode, the following workflow is executed to generate
 
 <p align="center">
     <img src="assets/Ai-agent-workflow.png" alt="Ai-agent-workflow" width="100%">
-</p>
-
-                          
-                                 +----------------------------------+
-                                 |           [User Query]           |
-                                 +----------------------------------+
-                                                |
-                                                v
-                                 +----------------------------------+
-                                 |  [FastAPI Backend - /infer_rag]  |
-                                 +----------------------------------+
-                                                |
-                                                v
-                                 +----------------------------------+
-                                 |      [langchain_infer.py]        |
-                                 |   (Performs Similarity Search)   |
-                                 +----------------------------------+
-                                                |
-                                                v
-                                 +----------------------------------+       +-------------------------+
-                                 |       FAISS Vector Store         | <---- |      SAPSizing.txt      |
-                                 |     (Finds relevant chunks)      |       |    (Source Document)    |
-                                 +----------------------------------+       +-------------------------+
-                                                |
-                                                v
-                             +------------------------------------------+
-                             | [Context Chunks] + [Original User Query] |
-                             +------------------------------------------+
-                                                |
-                                                v
-                             +------------------------------------------+
-                             |       [Formatted Prompt Template]        |
-                             |"Context: {context}\nQuestion: {question}"|
-                             +------------------------------------------+
-                                                |
-                                                v
-                             +------------------------------------------+
-                             |   [Fine-Tuned Qwen2-7B Model on GPU]     |
-                             | (Generates response using both its       |
-                             | training and the provided context)       |
-                             +------------------------------------------+
-                                                 |
-                                                 v
-                             +------------------------------------------+
-                             |        [Final Response to User]          |
-                             +------------------------------------------+
-
+</p>                        
 
 
 
