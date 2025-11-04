@@ -108,6 +108,10 @@ The application uses a distributed microservice model, ensuring that each compon
 
 When a query is made in RAG mode, the following workflow is executed to generate a factually grounded response:
 
+<p align="center">
+    <img src="assets/Ai-agent-workflow.png" alt="Ai-agent-workflow" width="100%">
+</p>
+
                           
                                  +----------------------------------+
                                  |           [User Query]           |
