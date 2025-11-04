@@ -11,6 +11,8 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
   <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/LangChain-🦜🔗-blue?style=for-the-badge" alt="LangChain">
+  <img src="https://img.shields.io/badge/RAG-brightgreen?style=for-the-badge" alt="RAG">
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
   <img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab">
 </p>
@@ -29,9 +31,9 @@
   <img src="assets/main_page_screenshot.png" alt="Main Recommender Interface" width="48%"/>
   <img src="assets/rag_response_screenshot.png" alt="RAG Mode Response" width="48%"/>
 </p>
-<p align="center">
+<!-- <p align="center">
   <img src="assets/demo.gif" alt="Project Demo GIF" width="80%">
-</p>
+</p> -->
 <p align="center">
   <img src="assets/login_page_screenshot.png" alt="Login Page" width="30%"/>
   <img src="assets/agreement_page_screenshot.png" alt="User Agreement Page" width="30%"/>
